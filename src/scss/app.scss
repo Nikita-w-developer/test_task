@@ -1,0 +1,126 @@
+body {
+  background-color: #a7a7a7;
+  padding: 40px 80px;
+}
+.app {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px 20px;
+  font-family: "Rubik";
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+    button {
+      cursor: pointer;
+      height: 30px;
+      width: 120px;
+      border-radius: 10px;
+      border: 1px solid;
+      outline: none;
+      color: black;
+      background-color: transparent;
+      font-size: 13px;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 30px rgba(0, 0, 255, 0.2);
+      }
+    }
+    .search-product {
+      &__input {
+        height: 30px;
+        width: auto;
+        border-radius: 10px;
+        padding-left: 7px;
+      }
+    }
+  }
+  .creation-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .new-product {
+      margin-right: 30px;
+    }
+  }
+
+  .product_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  .info_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    .description {
+      width: 300px;
+    }
+  }
+  .go-to-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    button {
+      cursor: pointer;
+      height: 30px;
+      width: 120px;
+      border-radius: 10px;
+      border: 1px solid;
+      outline: none;
+      color: black;
+      background-color: transparent;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 30px rgba(0, 0, 255, 0.2);
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    list-style-type: none;
+  }
+
+  .pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    cursor: pointer;
+  }
+
+  .pagination .active a {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: white;
+  }
+
+  .pagination a:hover {
+    background-color: #ddd;
+  }
+
+  .not_found_page {
+    text-align: center;
+    font-size: 45px;
+    button {
+      margin: 0, auto;
+      height: 200px;
+      width: 500px;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 100px;
+    }
+  }
+}
